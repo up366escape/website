@@ -50,7 +50,7 @@
       delete Data.index;
       localStorage.Data = JSON.stringify(Data);
       Data = null;
-      }catch(e){alert(e.stack)}
+      }catch(e){alert(e.stack);history.back();}
     </script>
   </head>
   <body>
@@ -70,6 +70,12 @@
       </div>
       <div class="box">
         <a href="./WoGame/">窝游</a>
+      </div>
+      <div class="box">
+        <a href="./pages/WuZiQi.html/">五子棋</a>
+      </div>
+      <div class="box">
+        <a href="./pages/ChineseChess.html">象棋</a>
       </div>
       <div class="box">
         <a href="./pages/testPage.html">测试页面</a>
