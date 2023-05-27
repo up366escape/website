@@ -73,7 +73,19 @@
       onload="this.media='all'"
 
     />
-
+    <script src="../js/page.js"></script>
+    <script>
+      let allA = document.querySelectorAll("a");
+      for(let v of allA){
+        v.onclick = function(){
+          let p = new Page({
+            url:this.href
+          });
+          p.show(document.body);
+          return false;
+        }
+      }
+    </script>
     <script src="//s1.hdslb.com/bfs/static/laputa-home/client/assets/svgfont.93f75c99.js" async></script><script src="https://www.bilibili.com/gentleman/polyfill.js?features=es2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Ces2021%2Ces2022%2CglobalThis&flags=gated"></script>
 
     
