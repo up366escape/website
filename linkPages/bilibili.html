@@ -74,18 +74,7 @@
 
     />
     <script src="../js/page.js"></script>
-    <script>
-      let allA = document.querySelectorAll("a");
-      for(let v of allA){
-        v.onclick = function(){
-          let p = new Page({
-            url:this.href
-          });
-          p.show(document.body);
-          return false;
-        }
-      }
-    </script>
+    
     <script src="//s1.hdslb.com/bfs/static/laputa-home/client/assets/svgfont.93f75c99.js" async></script><script src="https://www.bilibili.com/gentleman/polyfill.js?features=es2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Ces2021%2Ces2022%2CglobalThis&flags=gated"></script>
 
     
@@ -325,7 +314,18 @@
     <script nomodule id="vite-legacy-polyfill" src="//s1.hdslb.com/bfs/static/laputa-home/client/assets/polyfills-legacy.a0f0815e.js"></script>
 
     <script nomodule id="vite-legacy-entry" data-src="//s1.hdslb.com/bfs/static/laputa-home/client/assets/index-legacy.1d8d64a8.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
-
+    <script>
+      let allA = document.querySelectorAll("a");
+      for(let v of allA){
+        v.onclick = function(){
+          let p = new Page({
+            url:this.href
+          });
+          p.show(document.body);
+          return false;
+        }
+      }
+    </script>
   </body>
 
 </html>
