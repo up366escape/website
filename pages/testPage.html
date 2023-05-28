@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script src="../js/changeUA.js"></script>
     <script src="../js/jq.js"></script>
     <script src="../js/random.js"></script>
     <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
@@ -53,7 +54,7 @@
       });
       let box = jq("#test-box");
       function noAlert(){
-        window.alert=windowAlert;
+        windowAlert = alert;
         alert=function(){}
       }
       function openAlert(){
