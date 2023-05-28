@@ -203,7 +203,7 @@
       }
       function bilibiliSearch(){
         let key = prompt("输入搜索内容");
-        if(!(/^up:/.test(key))){
+        if(!(/^up:/.test(key)){
           (new Page({url:"https://search.bilibili.com/all?keyword="+key+"&from_source=webtop_search&spm_id_from=333.1007&search_source=5"})).show(document.body);
         }else{
           (new Page({url:"https://search.bilibili.com/upuser?keyword="+key.replace(/^up:/,'')+"&from_source=webtop_search&spm_id_from=333.1007&search_source=5"}).show(document.body)
