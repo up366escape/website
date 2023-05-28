@@ -1,0 +1,30 @@
+﻿<object data="https://github.com" width="1000" height="800" type="text/html">
+    Alternative Content
+</object>
+
+https://player.bilibili.com/player.html?cid=57016129&aid=57016129&bvid=BV1Ex411d7VY&page=1&as_wide=1&high_quality=1&danmaku=0&t=30
+
+key	说明
+cid	chat id，每个chat id对应一组弹幕池和
+如填了 aid, 这个字段不填也没关系
+aid	article id, 视频的av号
+就是B站的 avxxxx 后面的数字
+bvid	bilibili video id, 视频的bv号
+2020.03 时候, B站把 AV 号根据一定的算法转成这个了
+如果填了 bvid, 那么 aid 不填也可以
+page	第几个视频, 起始下标为 1 (默认值也是为1)
+就是B站视频, 选集里的, 第几个视频
+as_wide	是否宽屏
+1: 宽屏, 0: 小屏
+high_quality	是否高清
+1: 高清, 0: 最低视频质量(默认)
+如视频有 360p 720p 1080p 三种, 默认或者 high_quality=0 是最低 360p
+high_quality=1 是最高1080p
+danmaku	是否开启弹幕
+1: 开启(默认), 0: 关闭
+t	打开时, 自动跳转到某个时间, 并且自动播放(单位秒)
+比如 t=60, 那么自动跳转到1分钟, 且自动播放
+
+
+
+
