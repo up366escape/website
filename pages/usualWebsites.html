@@ -1,5 +1,7 @@
 <html>
   <head>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <script>let vConsole = new VConsole();</script>
     <script src="../js/ctCode.js"></script>
     <script src="../js/jq.js"></script>
     <script src="../js/changeUA.js"></script>
@@ -185,12 +187,12 @@
           p.class = "shownPage scalePage center";
           p.set();
         });
-        jq(page).find(".back").bind("click",function(){
+        /*jq(page).find(".back").bind("click",function(){
           let p = jq(page);
           p.set({
             class:"hiddenPage scalePage center";
           });
-        })
+        })*/
       }
       scalePage(".mathTools","#mathToolsPage");
       scalePage("#search","#searchPage");
