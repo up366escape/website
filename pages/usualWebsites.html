@@ -187,12 +187,11 @@
           p.class = "shownPage scalePage center";
           p.set();
         });
-        /*jq(page).find(".back").bind("click",function(){
+        jq(page).find(".back").click(function(){
           let p = jq(page);
-          p.set({
-            class:"hiddenPage scalePage center";
-          });
-        })*/
+          p.class="hiddenPage scalePage center";
+          p.set();
+        })
       }
       scalePage(".mathTools","#mathToolsPage");
       scalePage("#search","#searchPage");
