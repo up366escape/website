@@ -186,10 +186,10 @@
           p.set();
         });
         jq(page).find(".back").bind("click",function(){
-          let p = this.parent();
+          let p = jq(page);
           p.set({
-            class:"hiddenPage scalePage center"
-          })
+            class:"hiddenPage scalePage center";
+          });
         })
       }
       scalePage(".mathTools","#mathToolsPage");
@@ -198,7 +198,7 @@
         let a = e.target;
         if(a.tagName==="A"){
           let key = prompt("输入搜索内容");
-          (new Page({url:t.getAttribute("search")+key})).show(document.body);
+          (new Page({url:a.getAttribute("search")+key})).show(document.body);
         }
       })
       document.querySelector("#saveURL").onclick = function(){
