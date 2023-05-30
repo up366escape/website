@@ -200,7 +200,7 @@
         let a = e.target;
         if(a.tagName==="A"){
           let key = prompt("输入搜索内容");
-          (new Page({url:a.getAttribute("search")+key})).show(document.body);
+          (new Page({url:"https://"+a.getAttribute("search")+key})).show(document.body);
         }
       })
       document.querySelector("#saveURL").onclick = function(){
