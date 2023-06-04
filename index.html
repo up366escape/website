@@ -25,7 +25,7 @@
         alert("欢迎来到此网页！");
         if(confirm("此网站服务每天仅可免费使用5次，是否继续使用？")){
           let answer = prompt("输入激活码(6位数字)可无限使用");
-          if(answer in Data.passwords){
+          if(Data.passwords.some(v=>answer===v)){
             alert("欢迎使用！");
             Data.userState = 1;
           }else{
